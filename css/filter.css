@@ -1,0 +1,29 @@
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* Content */
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  /* Style the buttons */
+  .btn:hover {
+    border: 0.50pt solid #1cf3c7 !important;
+  }
+  .btn.active {
+    border: 0.50pt solid #1cf3c7 !important;
+    color: #171717 !important;
+    background-color: #1cf3c7 !important;
+  }
+  .card-body{
+      background-color: #171717;
+  }
