@@ -179,9 +179,8 @@ h3 {
 }
 
 h2 {
-    font-size: calc(30px + .25vw) !important;
     font-family: 'HelveticaNeueLTStd-BlkEx93', 'Work Sans', sans-serif !important;
-    letter-spacing: 2px;
+    letter-spacing: 0.050em !important;
     /*color: #a6a6a6;*/
     color: #5f5f5f;
     -webkit-user-select: none;
@@ -227,10 +226,6 @@ nav .fab:hover {
     color: #1cf3c7 !important;
 }
 
-.navbar-brand {
-    padding-top: 0 !important;
-}
-
 .navbar-brand img {
     height: 24px !important;
 }
@@ -253,15 +248,15 @@ nav .fab:hover {
     height: 100vh;
 }
 
-.home h1 {
+.home h1,
+.home h2 {
     font-family: 'HelveticaNeueLTStd-BlkEx93', 'Work Sans', sans-serif !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    font-size: calc(60px + .99vw) !important;
-    letter-spacing: 0.090em;
+    letter-spacing: 0.050em !important;
     /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#15b28d+0,1cf3c7+100 */
     background: #15b28d;
     /* Old browsers */
@@ -279,10 +274,15 @@ nav .fab:hover {
     -webkit-box-decoration-break: clone;
     box-decoration-break: clone;
     display: block;
+    font-size: calc(30px + .25vw) !important;
+}
+
+h2.xs {
+    font-size: calc(20px + .25vw) !important;
 }
 
 .home p {
-    color: #a6a6a6 !important;
+    color: #ffffff70 !important;
     letter-spacing: 0.05em;
     line-height: 1.75em;
     font-size: 17px;
@@ -304,7 +304,7 @@ nav .fab:hover {
 }
 
 .fondo-pre {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.77);
     width: 100%;
     height: 100vh;
 }
@@ -595,7 +595,7 @@ boton .box .curmudgeon
 /* about-me */
 .progress {
     background-color: #171717 !important;
-    height: 17px !important;
+    height: 1.75pt !important;
 }
 
 .progress-bar {
@@ -633,14 +633,33 @@ boton .box .curmudgeon
     user-select: none;
 }
 
-.home h5 {
+.habilidades .text-left.m-0.text-uppercase {
+    letter-spacing: 0.10em !important;
+    margin: 5px 0px !important;
+}
+
+.habilidades h4 {
+    font-family: 'HelveticaNeueLTStd-BlkEx93', 'Work Sans', sans-serif !important;
+    color: #5f5f5f;
+    font-size: 1.3em;
+    letter-spacing: 0.10em !important;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
-    letter-spacing: 0.47em;
-    margin-left: 2px !important;
+
+}
+
+.home h3 {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    letter-spacing: 0 !important;
+    margin-left: 0 !important;
+    font-family: 'HelveticaNeueLTStd-BlkEx93', 'Work Sans', sans-serif !important;
 }
 
 .progress-bar p {
@@ -652,10 +671,9 @@ boton .box .curmudgeon
 }
 
 .progress-n {
-    color: #171717;
-    font-family: 'HelveticaNeueLTStd-BlkEx93', 'Work Sans', sans-serif !important;
-    font-size: 15px !important;
-    letter-spacing: 2px;
+    letter-spacing: 0.15em !important;
+    margin-top: 2px !important;
+    font-size: 0.9em !important;
 }
 
 /* 
@@ -743,7 +761,7 @@ CONTACTO
 }
 
 label {
-    color: #a6a6a6;
+    color: #171717;
 }
 
 form {
@@ -770,17 +788,17 @@ form {
 input::-moz-placeholder,
 textarea::-moz-placeholder {
     /* Firefox 19+ */
-    color: #a6a6a6 !important;
+    color: #5f5f5f !important;
 }
 
 input::-ms-input-placeholder,
 textarea::-ms-input-placeholder {
-    color: #a6a6a6 !important;
+    color: #5f5f5f !important;
 }
 
 input::placeholder,
 textarea::placeholder {
-    color: #a6a6a6 !important;
+    color: #5f5f5f !important;
 }
 
 footer p {
@@ -802,9 +820,11 @@ footer .text-center a:hover {
 footer .svg-inline--fa {
     color: #5f5f5f;
 }
+
 .vibra {
     color: #1cf3c7 !important;
 }
+
 .img-thumbnail {
     border: 4px solid #0c0c0c !important;
     padding: 0 !important;
@@ -1110,7 +1130,18 @@ footer .svg-inline--fa {
     -webkit-box-shadow:inset 0 0 0 1px #a6a6a6;
     box-shadow:inset 0 0 0 1px #a6a6a6;
 }
-
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17c49e+42,1cf3c7+100
+background: rgb(23, 196, 158);
+/* Old browsers
+background: -moz-linear-gradient(top, rgba(23, 196, 158, 1) 42%, rgba(28, 243, 199, 1) 100%);
+/* FF3.6-15
+background: -webkit-linear-gradient(top, rgba(23, 196, 158, 1) 42%, rgba(28, 243, 199, 1) 100%);
+/* Chrome10-25,Safari5.1-6
+background: linear-gradient(to bottom, rgba(23, 196, 158, 1) 42%, rgba(28, 243, 199, 1) 100%);
+/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17c49e', endColorstr='#1cf3c7', GradientType=0);
+/* IE6-9
+background-attachment: fixed;
 /*
 Dispositivos grandes (escritorios, 992px y más) 
 Large devices (desktops, 992px and up) */
@@ -1121,18 +1152,14 @@ Large devices (desktops, 992px and up) */
     }
 
     .home {
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#17c49e+42,1cf3c7+100 */
-        background: rgb(23, 196, 158);
-        /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(23, 196, 158, 1) 42%, rgba(28, 243, 199, 1) 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(23, 196, 158, 1) 42%, rgba(28, 243, 199, 1) 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(23, 196, 158, 1) 42%, rgba(28, 243, 199, 1) 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#17c49e', endColorstr='#1cf3c7', GradientType=0);
-        /* IE6-9 */
+        background: url(https://66.media.tumblr.com/383c676fb8dffb368c6cbe132af0bd5e/tumblr_omvqnlrJCC1s4fz4bo1_r2_500.gif) no-repeat center center;
         background-attachment: fixed;
+        background-size: auto auto;
+        display: table;
+        width: 100%;
+        margin: 0;
+        background-size: cover;
+        height: 100vh;
     }
 
 
@@ -1163,7 +1190,7 @@ Large devices (desktops, 992px and up) */
     }
 
     .home h1 {
-        font-size: 47px;
+        font-size: 2em !important;
         letter-spacing: 2px !important;
     }
 }
